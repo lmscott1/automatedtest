@@ -10,6 +10,7 @@ username = os.environ.get("USERNAME")
 password = os.environ.get("PASSWORD")
 
 
+
 def signInDeets():
 
     signInUsernameInput = driver.find_element_by_xpath(
@@ -23,7 +24,7 @@ def signInDeets():
 
 def clickSurvey():
 
-    surveyButton = driver.find_element_by_css_selector(
+    driver.find_element_by_css_selector(
         'div[data-testid="NavigationlinksSurveys"]').click()
     # surveyButton.send_keys(Keys.RETURN)
 
